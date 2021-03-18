@@ -10,7 +10,7 @@ const romanianRelayWorkPrefix = "E gata releul, "
 const frenchRelayWorkPrefix = "Le relais est-il prêt, "
 const germanRelayWorkPrefix = "Ist das Relais bereit, "
 
-func Hello(name, language string) string {
+func CheckRelay(name, language string) string {
 	if name == "" {
 		name = "freaks"
 	}
@@ -33,5 +33,5 @@ func relayWorkPrefix(language string) (prefix string) {
 }
 
 func main() {
-	fmt.Println(Hello("Chris", ""))
+	fmt.Println(CheckRelay("Chris", ""))
 }
