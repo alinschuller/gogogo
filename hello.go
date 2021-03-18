@@ -2,10 +2,15 @@ package main
 
 import "fmt"
 
-func Hello() string {
-	return "Is the relay ready? We're getting there"
+const englishRelayWorkPrefix = "Is the relay ready, "
+
+func Hello(name string) string {
+	if name == "" {
+		name = "freaks"
+	}
+	return englishRelayWorkPrefix + name + "?"
 }
 
 func main() {
-	fmt.Println(Hello())
+	fmt.Println(Hello("Chris"))
 }

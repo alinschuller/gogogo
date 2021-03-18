@@ -1,1 +1,3 @@
-module "gogogo"
+module gogogo
+
+go 1.16
